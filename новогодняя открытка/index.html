@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+
+            font-family: Roboto, sans-serif;
+        }
+        body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color: lightgreen;
+        }
+        .card{
+            width: 660px;
+            height: 450px;
+            position: relative;
+            transform-style: preserve-3d;
+            transform: perspective(1000px);
+            display: flex;
+        }
+        .card__left,
+        .card__right{
+            width: 50%;
+            height: 100%;
+            border: 6px solid salmon;
+        }
+        .card__right{
+            padding: 12px;
+            background-color: bisque;
+        }
+        .card__left{
+            transform-origin: right;
+            background-color: crimson;
+            transform: rotateY(25deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card__title{
+            font-size: 20px;
+            margin-bottom: 16px;
+        }
+        .card__text{
+            font-size: 18px;
+            font-style: italic;
+        }
+        .card__text::first-letter {
+            color: #c1121f;
+            font-size: 27px;
+        }
+.card__image{
+    width: 200px;
+    height: 200px;
+}
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card__left">
+<img src=https://cdn4.iconfinder.com/data/icons/christmas-random/64/27-cat-512.png alt="" class="card__image">
+
+
+        </div>
+        <div class="card__right">
+            <h1 class="card__title">Открытка</h1>
+            <p class="card__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Commodi cumque, dolorem culpa temporibus beatae inventore rem asperiores optio eligendi amet?</p>
+        </div>
+    </div>
+</body>
+</html>
