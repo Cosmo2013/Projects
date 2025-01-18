@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .one {
+        animation: boy 0.5s steps(8) infinite;
+        background: url("https://www.ssaurel.com/blog/wp-content/uploads/2016/10/running_man.png");
+        width: 82px;
+        height: 116px;
+      }
+
+      @keyframes boy {
+        0% {
+          background-position-x: 0px;
+        }
+
+        100% {
+          background-position-x: -660px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="one"></div>
+  </body>
+</html>
